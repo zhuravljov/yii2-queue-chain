@@ -26,7 +26,7 @@ interface StorageInterface
     public function addDoneCount($groupId, $result);
 
     /**
-     * Метод должен вырнуть прогресс выполнения группы заданий.
+     * Метод должен вернуть прогресс выполнения группы заданий.
      * @param string $groupId
      * @return array
      */
