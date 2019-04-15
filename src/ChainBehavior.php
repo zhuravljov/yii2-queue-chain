@@ -105,7 +105,7 @@ class ChainBehavior extends \yii\base\Behavior
         list($pos, $size) = $this->storage->getProgress($groupId);
         if ($size > 0 && $pos == $size) {
             $results = $this->storage->reset($groupId);
-            $job->finalizeGroup($results);
+            $job->finalizeGroup($this, $results);
         }
     }
 }
